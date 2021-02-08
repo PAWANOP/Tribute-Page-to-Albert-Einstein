@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
+    <title>Tribute Page · Demo &amp; Download  | CodeSeek.co</title>
+
+
+    <style type="text/css">
+        body,
+        html {
+            width: 100%;
+            height: 100%;
+        }
+    
+        body {
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+            font-family: "Arial";
+        }
+    
+        iframe {
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
+            padding-top: 60px;
+            border: 0px;
+        }
+    
+        .header {
+            position: absolute;
+            width: 100%;
+            height: 60px;
+            box-sizing: border-box;
+            background-color: #333;
+            border-bottom: 2px solid #000;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, .7);
+            color:#FFF;
+    
+        }
+    
+        .header .logo {
+            position: absolute;
+            left: 15px;
+            top: 0px;
+            height: 60px;
+            display: block;
+        }
+    
+        .header .logo img {
+            height: 50px;
+            margin-top: 5px;
+            margin-left: 0px;
+        }
+    
+        .header h1 {
+            width: 100%;
+            text-align: center;
+            padding: 0px;
+            margin: 0px;
+            font-size: 20px;
+            height: 60px;
+            line-height: 60px;
+            vertical-align: middle;
+    
+        }
+    
+        .header .actions {
+            position: absolute;
+            height: 60px;
+            line-height: 60px;
+            vertical-align: middle;
+            right: 15px;
+            top: 0;
+        }
+    
+        .header .actions a {
+            text-decoration: none;
+            color: rgba(255,255,255,.7);
+            
+            border-left: 1px solid rgba(255,255,255,.1);
+            box-shadow: inset 1px 0 0 #000;
+            display: block;
+            float: left;
+            height: 60px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        
+        .header .actions a:hover{
+            color:#FFF;
+    
+            background-color: rgba(0, 0, 0, .2);
+            box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 1);
+        }
+        .header .actions a.download {
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="header">
+        <a href="/" class="logo">
+            <img class="logo " alt="Codeseek.co" title="Go to Codeseek.co" src="/images/logo.png">
+        </a>
+        <h1>Tribute Page</h1>
+        <div class="actions">
+            <a href="/vaibhavmittal18/tribute-page-KgWxyq">
+                <i class="zmdi zmdi-arrow-left"></i> Back to tutorial</a>
+            <a class="download" href="/download/KgWxyq">
+                <i class="zmdi zmdi-cloud-download"></i> Download</a>
+        </div>
+    </div>
+    <iframe src="/preview/KgWxyq?preview=1" allowfullscreen="true" sandbox="allow-scripts allow-pointer-lock allow-same-origin allow-popups allow-modals allow-forms"></iframe>
+
+<script>
+    var app = {};
+    app.ajax = function (type, url, data, callback) {
+
+        var xhr = new XMLHttpRequest();
+        xhr.open(type, url, true);
+
+        if (type == 'POST') {
+            xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        }
+
+        xhr.send(data);
+        xhr.onreadystatechange = function () {
+            var DONE = 4;
+            if (xhr.readyState === DONE) {
+                if (!xhr.responseText)
+                    callback(null, xhr);
+                else
+                    callback(JSON.parse(xhr.responseText), xhr);
+            }
+        }
+    }
+    setTimeout(function () {
+            app.ajax("POST", "/track", "type=view&id=KgWxyq", function () { });
+    }, 500);
+</script>
+</body>
+
+</html>
